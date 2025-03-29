@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasky - To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://img.icons8.com/ios/50/000000/task.png" />
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <img src="https://via.placeholder.com/150" alt="Tasky Logo" class="logo">
+            <h1>Tasky</h1>
+            <p>Organize your tasks with priorities and due dates!</p>
+        </header>
+
+        <div class="task-form">
+            <input type="text" id="task-input" placeholder="What do you need to do?" />
+            <input type="date" id="due-date" />
+            <select id="priority">
+                <option value="low">Low Priority</option>
+                <option value="medium">Medium Priority</option>
+                <option value="high">High Priority</option>
+            </select>
+            <button id="add-task-btn">Add Task</button>
+        </div>
+
+        <div class="task-list">
+            <h2>My Tasks</h2>
+            <ul id="task-list"></ul>
+        </div>
+
+        <footer>
+            <p>&copy; 2024 Tasky. All Rights Reserved.</p>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
